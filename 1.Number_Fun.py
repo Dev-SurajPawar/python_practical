@@ -9,7 +9,7 @@ def Number_Multi_Operations(num):
         if count==0:
             print("Prime Number: ",num)
         else:
-            print("Prime Number: ",num)
+            print("Not Prime Number: ",num)
 
     def Palindrome(num):
 
@@ -35,7 +35,7 @@ def Number_Multi_Operations(num):
             count=len(str(num))
             while tmp>0:
                 sep=tmp%10
-                arm=sep*count+arm
+                arm=sep**count+arm
                 tmp//=10
             if var==arm:
                 print("Armstrong Number: ",var)
